@@ -8,6 +8,10 @@ import Tasks from "./screens/tasks";
 import AddTask from "./screens/add_task";
 import Settings from "./screens/settings";
 
+// مكتبة التاريخ
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+
 const theme = createTheme({
   typography: {
     fontFamily: "Manrope, sans-serif",
@@ -17,18 +21,20 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <BrowserRouter>
-        <div style={{ marginLeft: "20px" }}>
-          <Routes>
-            <Route path="/" element={<Navigate to="/home" />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/tasks" element={<Tasks />} />
-            <Route path="/add-task" element={<AddTask />} />
-            <Route path="/settings" element={<Settings />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <CssBaseline />
+        <BrowserRouter>
+          <div style={{ marginLeft: "20px" }}>
+            <Routes>
+              <Route path="/" element={<Navigate to="/home" />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/tasks" element={<Tasks />} />
+              <Route path="/add-task" element={<AddTask />} />
+              <Route path="/settings" element={<Settings />} />
+            </Routes>
+          </div>
+        </BrowserRouter>
+      </LocalizationProvider>
     </ThemeProvider>
   );
 }

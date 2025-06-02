@@ -43,7 +43,7 @@ function Tasks() {
           <Table>
             <TableHead>
               <TableRow>
-                <TableCell >Task</TableCell>
+                <TableCell>Task</TableCell>
                 <TableCell>Due Date</TableCell>
                 <TableCell>Priority</TableCell>
                 <TableCell>Status</TableCell>
@@ -52,7 +52,7 @@ function Tasks() {
             <TableBody>
               <TableRow>
                 <TableCell>Write a blog post </TableCell>
-                <TableCell>2024-03-15</TableCell>
+                <TableCell style={{ fontWeight: "200" }}>2024-03-15</TableCell>
                 <TableCell>
                   <div
                     style={{
@@ -86,7 +86,7 @@ function Tasks() {
               </TableRow>
               <TableRow>
                 <TableCell>Prepare presentation </TableCell>
-                <TableCell>2024-03-20 </TableCell>
+                <TableCell style={{ fontWeight: "200" }}>2024-03-20 </TableCell>
                 <TableCell>
                   <div
                     style={{
@@ -120,7 +120,7 @@ function Tasks() {
               </TableRow>
               <TableRow>
                 <TableCell>Schedule team meeting </TableCell>
-                <TableCell>2024-03-22 </TableCell>
+                <TableCell style={{ fontWeight: "200" }}>2024-03-22 </TableCell>
                 <TableCell>
                   <div
                     style={{
@@ -154,7 +154,7 @@ function Tasks() {
               </TableRow>
               <TableRow>
                 <TableCell>Review project proposal </TableCell>
-                <TableCell>2024-03-25 </TableCell>
+                <TableCell style={{ fontWeight: "200" }}>2024-03-25 </TableCell>
                 <TableCell>
                   <div
                     style={{
@@ -188,7 +188,7 @@ function Tasks() {
               </TableRow>
               <TableRow>
                 <TableCell>Follow up with clients </TableCell>
-                <TableCell>2024-03-28 </TableCell>
+                <TableCell style={{ fontWeight: "200" }}>2024-03-28 </TableCell>
                 <TableCell>
                   <div
                     style={{
