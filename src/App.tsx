@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./screens/home";
 import Tasks from "./screens/tasks";
 import AddTask from "./screens/add_task";
-import Settings from "./screens/settings";
+import Reports from "./screens/Reports";
 
 // مكتبة التاريخ
 import { LocalizationProvider } from "@mui/x-date-pickers";
@@ -30,7 +30,7 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/tasks" element={<Tasks />} />
               <Route path="/add-task" element={<AddTask />} />
-              <Route path="/settings" element={<Settings />} />
+              <Route path="/reports" element={<Reports />} />
             </Routes>
           </div>
         </BrowserRouter>
