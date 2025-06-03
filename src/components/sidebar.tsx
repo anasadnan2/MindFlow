@@ -3,7 +3,7 @@ import { Typography, Button } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import AddTaskIcon from "@mui/icons-material/AddTask";
-import SettingsIcon from "@mui/icons-material/Settings";
+import LightbulbIcon from "@mui/icons-material/Lightbulb";
 
 import avatarImage from "../assets/IMG_0073.jpg";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -118,25 +118,25 @@ function Sidebar() {
 
         <Button
           fullWidth
-          className={`sidebar-button ${isActive("/settings") ? "active" : ""}`}
-          onClick={() => navigate("/settings")}
+          className={`sidebar-button ${isActive("/Reports") ? "active" : ""}`}
+          onClick={() => navigate("/reports")}
           sx={{
             justifyContent: "flex-start",
             pl: 2,
             textTransform: "none",
             gap: 1.5,
             border: "none",
-            fontWeight: isActive("/settings") ? 500 : 300,
+            fontWeight: isActive("/reports") ? 500 : 300,
             color: "black",
             fontFamily: "Manrope, sans-serif",
-            bgcolor: isActive("/settings") ? "#f0f0f0" : "transparent",
+            bgcolor: isActive("/reports") ? "#f0f0f0" : "transparent",
             "&:hover": {
               bgcolor: "#f5f5f5",
             },
           }}
         >
-          <SettingsIcon />
-          Settings
+          <LightbulbIcon />
+          Reports
         </Button>
       </div>
     </div>

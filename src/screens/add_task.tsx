@@ -10,7 +10,6 @@ import {
   Select,
   Button,
   Stack,
-  Grid,
   Box,
 } from "@mui/material";
 import type { SelectChangeEvent } from "@mui/material/Select";
@@ -42,7 +41,7 @@ function AddTask() {
           boxShadow: "0 0 15px rgba(0,0,0,0.05)",
         }}
       >
-        <Typography variant="h4" fontWeight="bold" gutterBottom>
+        <Typography variant="h4" fontWeight="700" gutterBottom>
           Add New Task
         </Typography>
 
